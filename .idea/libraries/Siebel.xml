@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Siebel">
+    <CLASSES>
+      <root url="jar://C:/Siebel/16.0.0.0.0/Client/CLASSES/Siebel.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
