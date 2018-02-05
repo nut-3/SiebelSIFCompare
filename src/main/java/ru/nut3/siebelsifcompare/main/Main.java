@@ -1,4 +1,4 @@
-package ru.nut3.siebelsifcompare.main;
+package main.java.ru.nut3.siebelsifcompare.main;
 
 /**
  * Main module of Siebel SIF Compare program
