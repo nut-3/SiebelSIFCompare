@@ -9,8 +9,8 @@
         <module name="SiebelSIFCompare" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="SiebelSIFCompare" target="1.5" />
+    <bytecodeTargetLevel target="9">
+      <module name="SiebelSIFCompare" target="9" />
     </bytecodeTargetLevel>
   </component>
 </project>

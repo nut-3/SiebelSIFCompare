@@ -1,6 +1,6 @@
-package main.java.ru.nut3.siebelsifcompare.SifObject;
+package ru.nut3.siebelsifcompare.logic;
 
-@XmlRootElement
+//@XmlRootElement
 public class SifObject {
     private String name;
 
