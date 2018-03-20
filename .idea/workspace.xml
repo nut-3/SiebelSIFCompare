@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="802c01e7-2de5-4e4f-b83e-cd295f9bd006" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/logic/SiebelConnect.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/ui/MainWindow.java" afterPath="$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/ui/MainWindow.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/logic/SiebelConnect.java" afterPath="$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/logic/SiebelConnect.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="SiebelConnect.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/logic/SiebelConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="306">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,9 +53,37 @@
       <file leaf-file-name="SiebelDataBean.class" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Siebel/16.0.0.0.0/Client/CLASSES/Siebel.jar!/com/siebel/data/SiebelDataBean.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
+            <state relative-caret-position="340">
               <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-              <folding />
+              <folding>
+                <marker date="1509016802326" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1509016802326" expanded="false" signature="139:437" ph="..." />
+                <marker date="1509016802326" expanded="true" signature="537:544" ph="{}" />
+                <marker date="1509016802326" expanded="true" signature="647:729" ph="{...}" />
+                <marker date="1509016802326" expanded="false" signature="771:782" ph=" { " />
+                <marker date="1509016802326" expanded="false" signature="824:830" ph=" }" />
+                <marker date="1509016802326" expanded="true" signature="894:1326" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="1361:1546" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="1598:1755" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="1846:2281" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="2352:2747" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="2844:3173" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="3203:3383" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="3485:3544" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="3659:4715" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="4747:4929" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="4995:5170" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="5203:5386" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="5421:5606" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="5669:6003" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="6058:6235" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="6326:6903" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="6990:7415" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="7463:7549" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="7620:8036" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="8109:8529" ph="{...}" />
+                <marker date="1509016802326" expanded="true" signature="8614:9156" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,10 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,6 +270,10 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -448,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521554894163</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="SiebelConnect 1">
+      <created>1521561040702</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1521561040702</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -457,19 +491,17 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.50238097" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.49761903" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.49761903" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24880952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -480,7 +512,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -494,7 +528,8 @@
     <MESSAGE value="Maven commit3" />
     <MESSAGE value="MainWindow" />
     <MESSAGE value="FileChooser 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="FileChooser 1" />
+    <MESSAGE value="SiebelConnect 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="SiebelConnect 1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -504,6 +539,71 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/logic/SifObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Siebel/16.0.0.0.0/Client/CLASSES/Siebel.jar!/com/siebel/data/SiebelDataBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <marker date="1509016802326" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1509016802326" expanded="false" signature="139:437" ph="..." />
+            <marker date="1509016802326" expanded="true" signature="537:544" ph="{}" />
+            <marker date="1509016802326" expanded="true" signature="647:729" ph="{...}" />
+            <marker date="1509016802326" expanded="false" signature="771:782" ph=" { " />
+            <marker date="1509016802326" expanded="false" signature="824:830" ph=" }" />
+            <marker date="1509016802326" expanded="true" signature="894:1326" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="1361:1546" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="1598:1755" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="1846:2281" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="2352:2747" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="2844:3173" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="3203:3383" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="3485:3544" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="3659:4715" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="4747:4929" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="4995:5170" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="5203:5386" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="5421:5606" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="5669:6003" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="6058:6235" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="6326:6903" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="6990:7415" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="7463:7549" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="7620:8036" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="8109:8529" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="8614:9156" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/logic/SiebelConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -718,7 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15504">
           <caret line="1138" column="27" lean-forward="false" selection-start-line="1138" selection-start-column="24" selection-end-line="1138" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,10 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="1868" column="48" lean-forward="false" selection-start-line="1868" selection-start-column="34" selection-end-line="1868" selection-end-column="48" />
-          <folding>
-            <element signature="e#67234#67235#0" expanded="false" />
-            <element signature="e#67291#67292#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-318">
           <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,7 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
           <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="74" column="56" lean-forward="false" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-53">
           <caret line="229" column="52" lean-forward="true" selection-start-line="229" selection-start-column="11" selection-end-line="229" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="52" column="19" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2511">
           <caret line="89" column="13" lean-forward="false" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -848,7 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="60" column="11" lean-forward="false" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,7 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3144">
           <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,22 +950,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="93" column="19" lean-forward="false" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Siebel/16.0.0.0.0/Client/CLASSES/Siebel.jar!/com/siebel/data/SiebelDataBean.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
+        <state relative-caret-position="340">
           <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding />
+          <folding>
+            <marker date="1509016802326" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1509016802326" expanded="false" signature="139:437" ph="..." />
+            <marker date="1509016802326" expanded="true" signature="537:544" ph="{}" />
+            <marker date="1509016802326" expanded="true" signature="647:729" ph="{...}" />
+            <marker date="1509016802326" expanded="false" signature="771:782" ph=" { " />
+            <marker date="1509016802326" expanded="false" signature="824:830" ph=" }" />
+            <marker date="1509016802326" expanded="true" signature="894:1326" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="1361:1546" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="1598:1755" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="1846:2281" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="2352:2747" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="2844:3173" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="3203:3383" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="3485:3544" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="3659:4715" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="4747:4929" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="4995:5170" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="5203:5386" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="5421:5606" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="5669:6003" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="6058:6235" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="6326:6903" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="6990:7415" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="7463:7549" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="7620:8036" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="8109:8529" ph="{...}" />
+            <marker date="1509016802326" expanded="true" signature="8614:9156" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/nut3/siebelsifcompare/logic/SiebelConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

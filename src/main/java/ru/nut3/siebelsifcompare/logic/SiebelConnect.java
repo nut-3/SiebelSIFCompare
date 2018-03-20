@@ -17,9 +17,4 @@ public class SiebelConnect extends SiebelDataBean {
         this.busComp = busComp;
         this.serverPort = serverPort;
     }
-
-    public boolean logoff() {
-
-        return false;
-    }
 }
