@@ -2,9 +2,13 @@ package ru.nut3.siebelsifcompare.ui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
+import java.io.File;
 
 public class MainWindow extends JFrame {
     private static Point location = new Point();
+    private FileChooser fc;
 
     public MainWindow() throws HeadlessException {
         try {
@@ -18,19 +22,12 @@ public class MainWindow extends JFrame {
 
         setLayout(new BorderLayout());
 
-        JMenuBar mainMenu = new JMenuBar();
-        JMenu mFile = new JMenu("File");
-        JMenuItem miFileOpenSIF = new JMenuItem("Open SIF");
-        JMenuItem miFileExit = new JMenuItem("Exit");
+        Boolean oldFileChooserRO = UIManager.getBoolean("FileChooser.readOnly");
+        UIManager.put("FileChooser.readOnly", Boolean.TRUE);
+        fc = new FileChooser();
+        UIManager.put("FileChooser.readOnly", oldFileChooserRO);
 
-        setJMenuBar(mainMenu);
-
-        mainMenu.add(mFile);
-
-        mFile.add(miFileOpenSIF);
-        mFile.add(miFileExit);
-
-        miFileExit.addActionListener(e -> dispose());
+        createMenu();
 
         setVisible(true);
     }
@@ -41,7 +38,49 @@ public class MainWindow extends JFrame {
             x = (int) location.getX() + 20;
             y = (int) location.getY() + 20;
         }
-        super.setBounds(x, y, 400, 300);
+        super.setBounds(x, y, 800, 600);
         location.setLocation(x, y);
+    }
+
+    private void createMenu() {
+        //Init menu items
+        JMenuBar mainMenu = new JMenuBar();
+        JMenu mFile = new JMenu("File");
+        JMenuItem mFileOpenRepo = new JMenuItem("Connect to Repo");
+        JMenuItem mFileOpenSIF = new JMenuItem("Open SIF");
+        JMenu mFileOptions = new JMenu("Options");
+        JCheckBoxMenuItem mFileOptionsIgnoreCreated = new JCheckBoxMenuItem("Ignore CREATED", true);
+        JMenuItem mFileExit = new JMenuItem("Exit");
+
+        //Menu shortcuts
+        mFileOpenRepo.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
+        mFileOpenSIF.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
+        mFileExit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()+InputEvent.SHIFT_DOWN_MASK));
+
+        //Menu Actions
+        mFileExit.addActionListener(e -> dispose());
+        mFileOpenSIF.addActionListener(e -> {
+            int returnVal = fc.showOpenDialog(MainWindow.this);
+
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                File[] files = fc.getSelectedFiles();
+                //This is where a real application would open the file.
+                for (File file: files) {
+                    System.out.println("Opening: " + file.getName() + ".");
+                }
+            } else {
+                System.out.println("Open command cancelled by user.");
+            }
+        });
+
+        setJMenuBar(mainMenu);
+
+        //Assemble menu
+        mainMenu.add(mFile);
+        mFile.add(mFileOpenRepo);
+        mFile.add(mFileOpenSIF);
+        mFile.add(mFileOptions);
+        mFile.add(mFileExit);
+        mFileOptions.add(mFileOptionsIgnoreCreated);
     }
 }
