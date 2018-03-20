@@ -53,9 +53,10 @@ public class MainWindow extends JFrame {
         JMenuItem mFileExit = new JMenuItem("Exit");
 
         //Menu shortcuts
-        mFileOpenRepo.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
-        mFileOpenSIF.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
-        mFileExit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()+InputEvent.SHIFT_DOWN_MASK));
+        mFileOpenRepo.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask())); //CTRL+N || CMD+N
+        mFileOpenSIF.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask())); //CTRL+O || CMD+O
+        mFileExit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X,
+                Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()+InputEvent.SHIFT_DOWN_MASK)); // CTRL+SHIFT+X || CMD+SHIFT+X
 
         //Menu Actions
         mFileExit.addActionListener(e -> dispose());
