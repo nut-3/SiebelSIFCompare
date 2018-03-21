@@ -1,9 +1,7 @@
 package ru.nut3.siebelsifcompare.logic;
 
-import javax.xml.bind.annotation.XmlRootElement;
+//@XmlRootElement(name = "REPOSITORY")
 
-@XmlRootElement(name = "REPOSITORY")
-//@XmlType(propOrder = {"NAME", "UPDATED_BY"})
 public class SifObject {
     private String file;
     private String name;
