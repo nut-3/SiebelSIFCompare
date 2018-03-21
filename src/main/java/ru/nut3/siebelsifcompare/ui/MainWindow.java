@@ -1,7 +1,13 @@
 package ru.nut3.siebelsifcompare.ui;
 
+import ru.nut3.siebelsifcompare.logic.SifObject;
+
 import javax.swing.*;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.io.File;
@@ -10,12 +16,8 @@ public class MainWindow extends JFrame {
     private static Point location = new Point();
     private FileChooser fc;
 
-    public MainWindow() throws HeadlessException {
-        try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
-            e.printStackTrace();
-        }
+    public MainWindow() throws HeadlessException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         
         setBounds();
@@ -60,19 +62,7 @@ public class MainWindow extends JFrame {
 
         //Menu Actions
         mFileExit.addActionListener(e -> dispose());
-        mFileOpenSIF.addActionListener(e -> {
-            int returnVal = fc.showOpenDialog(MainWindow.this);
-
-            if (returnVal == JFileChooser.APPROVE_OPTION) {
-                File[] files = fc.getSelectedFiles();
-                //This is where a real application would open the file.
-                for (File file: files) {
-                    System.out.println("Opening: " + file.getName() + ".");
-                }
-            } else {
-                System.out.println("Open command cancelled by user.");
-            }
-        });
+        mFileOpenSIF.addActionListener(this::openSIF);
 
         setJMenuBar(mainMenu);
 
@@ -83,5 +73,27 @@ public class MainWindow extends JFrame {
         mFile.add(mFileOptions);
         mFile.add(mFileExit);
         mFileOptions.add(mFileOptionsIgnoreCreated);
+    }
+
+    private void openSIF(ActionEvent evt) {
+        int returnVal = fc.showOpenDialog(MainWindow.this);
+
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            File[] files = fc.getSelectedFiles();
+            //This is where a real application would open the file.
+            for (File file : files) {
+                System.out.println("Opening: " + file.getName() + ".");
+                try {
+                    JAXBContext context = JAXBContext.newInstance(SifObject.class);
+                    Unmarshaller un = context.createUnmarshaller();
+                    SifObject sif = (SifObject) un.unmarshal(file);
+                    System.out.println(sif.toString());
+                } catch (JAXBException e) {
+                    e.printStackTrace();
+                }
+            }
+        } else {
+            System.out.println("Open command cancelled by user.");
+        }
     }
 }
