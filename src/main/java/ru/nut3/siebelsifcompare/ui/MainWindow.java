@@ -1,16 +1,17 @@
 package ru.nut3.siebelsifcompare.ui;
 
-import ru.nut3.siebelsifcompare.logic.SifObject;
+import org.eclipse.persistence.dynamic.DynamicEntity;
+import org.eclipse.persistence.jaxb.dynamic.DynamicJAXBContext;
+import org.eclipse.persistence.jaxb.dynamic.DynamicJAXBContextFactory;
 
 import javax.swing.*;
-import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.InputStream;
 
 public class MainWindow extends JFrame {
     private static Point location = new Point();
@@ -80,17 +81,23 @@ public class MainWindow extends JFrame {
 
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             File[] files = fc.getSelectedFiles();
+            int i = 0;
             //This is where a real application would open the file.
             for (File file : files) {
                 System.out.println("Opening: " + file.getName() + ".");
                 try {
-                    JAXBContext context = JAXBContext.newInstance(SifObject.class);
-                    Unmarshaller un = context.createUnmarshaller();
-                    SifObject sif = (SifObject) un.unmarshal(file);
+                    System.out.println(file.getAbsolutePath());
+                    InputStream stream = Thread.currentThread().getContextClassLoader().getResourceAsStream(file.getAbsolutePath());
+                    DynamicJAXBContext context = DynamicJAXBContextFactory.createContextFromXSD(stream, null, null, null);
+                    DynamicEntity sif = context.newDynamicEntity("sif" + i);
+//                    JAXBContext context = JAXBContext.newInstance(SifObject.class);
+//                    Unmarshaller un = context.createUnmarshaller();
+//                    SifObject sif = (SifObject) un.unmarshal(file);
                     System.out.println(sif.toString());
                 } catch (JAXBException e) {
                     e.printStackTrace();
                 }
+                i++;
             }
         } else {
             System.out.println("Open command cancelled by user.");

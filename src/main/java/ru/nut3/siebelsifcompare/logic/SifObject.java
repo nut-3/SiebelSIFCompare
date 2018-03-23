@@ -1,28 +1,20 @@
 package ru.nut3.siebelsifcompare.logic;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
 
-
-import javax.xml.catalog.Catalog;
-import java.util.stream.Stream;
-
-public class SifObject implements Catalog {
-    @Override
-    public String matchSystem(String systemId) {
-        return null;
-    }
-
-    @Override
-    public String matchPublic(String publicId) {
-        return null;
-    }
+@XmlRootElement(name="REPOSITORY")
+public class SifObject {
+    @XmlAttribute(name="NAME")
+    private String name;
+    @XmlAttribute(name="CREATED_BY")
+    private String createdBy;
 
     @Override
-    public String matchURI(String uri) {
-        return null;
-    }
-
-    @Override
-    public Stream<Catalog> catalogs() {
-        return null;
+    public String toString() {
+        return "SifObject{" +
+                "name='" + name + '\'' +
+                ", createdBy='" + createdBy + '\'' +
+                '}';
     }
 }
